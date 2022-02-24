@@ -27,4 +27,13 @@ You should see:
   "message": " hello world"
 }
 ```
+Type safety:
+```
+curl -X POST -k http://localhost:8090/v1/example/echo -d '{"name": 1}' | jq .
+{
+  "code": 3,
+  "message": "proto: (line 1:10): invalid value for string type: 1",
+  "details": []
+}
+```
 
