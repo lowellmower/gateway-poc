@@ -1,4 +1,4 @@
 version: v1
-name: github.com/lowellmower/gateway-poc
+name: buf.build/lowellmower/gateway-poc
 deps:
   - buf.build/googleapis/googleapis
